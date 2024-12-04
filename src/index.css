@@ -1,0 +1,152 @@
+/* Import Goggle Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("bg.png") #030728 center no-repeat;
+}
+
+#root {
+  width: 100%;
+}
+
+.currency-converter {
+  margin: 0 auto;
+  color: #fff;
+  padding: 25px 20px 30px;
+  max-width: 410px;
+  backdrop-filter: blur(30px);
+  border-radius: 8px;
+  background: rgba(2, 7, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.converter-title {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.converter-form {
+  margin-top: 1.6rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.converter-form .form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.converter-form .form-input {
+  outline: none;
+  min-height: 40px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid violet; */
+}
+
+.flex .form-label {
+  font-weight: 500;
+}
+.flex .currency-select {
+  padding: 0 10px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+
+  gap: 0.1rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Correct it after wifi showing flag  */
+.flex .currency-select img {
+  width: 25px;
+}
+.flex .currency-select .currency-dropdown {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.flex .currency-select .currency-dropdown option {
+  color: #000;
+}
+
+.swap-icon {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+.swap-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.submit-btn {
+  min-height: 40px;
+  cursor: pointer;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.submit-btn.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.submit-btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.exchange-rate-result {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 1.1rem;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+}
